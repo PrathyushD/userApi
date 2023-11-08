@@ -27,7 +27,7 @@ namespace userApplication
         public async Task<List<users>> getUsers()
         {
             string queryString = "select * from Users";
-            List<users> users = await _usersRepository.GetUsers(queryString);
+            List<users> users = await _usersRepository.getUsers(queryString);
             return (users);
         }
     }
