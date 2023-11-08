@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace userCore.Models
 {
-    public interface IusersRepository
+    public interface IUsersRepository
     {
-
+        Task<List<users>> getUsers(string queryString);
     }
 }

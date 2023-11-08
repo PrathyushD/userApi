@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace userApplication
+namespace usersTest
 {
-    internal class userRepository
+    internal class userRepositoryTests
     {
     }
 }

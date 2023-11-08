@@ -1,4 +1,10 @@
+using userCore.Models;
+using userApplication;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddTransient<IusersRepository, userRepository>();
 
 // Add services to the container.
 

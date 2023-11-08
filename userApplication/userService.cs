@@ -7,26 +7,26 @@ using userCore.Models;
 
 namespace userApplication
 {
-    public class userService : IUserService
+    public class UserService : IUserService
     {
-        private readonly IusersRepository _usersRepository;
-        public userService(IusersRepository usersRepository)
+        private readonly IUsersRepository _usersRepository;
+        public UserService(IUsersRepository usersRepository)
         {
             _usersRepository = usersRepository;
         }
-        public Task<users> CreateUser(users user)
+        public Task<users> createUser(users user)
         {
             throw new NotImplementedException();
         }
 
-        public Task<users> DeleteUser(int UserId, users users)
+        public Task<users> deleteUser(int UserId, users users)
         {
             throw new NotImplementedException();
         }
 
-        public Task<List<users>> GetUsers()
+        public async Task<List<users>> getUsers()
         {
-            string queryString = "select * from users";
+            string queryString = "select * from Users";
             List<users> users = await _usersRepository.GetUsers(queryString);
             return (users);
         }

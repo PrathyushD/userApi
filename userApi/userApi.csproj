@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\userApplication\userApplication.csproj" />
-    <ProjectReference Include="..\userCore\userCore.csproj" />
     <ProjectReference Include="..\userInfrastructure\userInfrastructure.csproj" />
   </ItemGroup>
 

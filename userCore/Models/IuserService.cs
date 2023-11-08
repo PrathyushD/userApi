@@ -8,10 +8,10 @@ namespace userCore.Models
 {
     public interface IUserService
     {
-         Task<List<users>> GetUsers();
+         Task<List<users>> getUsers();
 
-        Task<users> CreateUser(users user);
+        Task<users> createUser(users user);
 
-        Task<users> DeleteUser(int UserId, users users);
+        Task<users> deleteUser(int UserId, users users);
     }
 }
