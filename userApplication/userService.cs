@@ -24,11 +24,10 @@ namespace userApplication
             throw new NotImplementedException();
         }
 
-        public Task<List<users>> GetUsers()
+        public async void GetUsers()
         {
             string queryString = "select * from users";
-            List<users> users = await _usersRepository.GetUsers(queryString);
-            return (users);
+            await Task.Delay(1000);
         }
     }
 }

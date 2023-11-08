@@ -8,7 +8,7 @@ namespace userCore.Models
 {
     public interface IUserService
     {
-         Task<List<users>> GetUsers();
+         void GetUsers();
 
         Task<users> CreateUser(users user);
 
